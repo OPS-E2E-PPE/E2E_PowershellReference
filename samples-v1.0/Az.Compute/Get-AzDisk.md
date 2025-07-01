@@ -1,10 +1,10 @@
 ---
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Compute.dll-Help.xml
 Module Name: Az.Compute
-online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/get-azdisk
+online version: https://learn.microsoft.com/powershell/module/az.compute/get-azdisk
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/Compute/Compute/help/Get-AzDisk.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/Compute/Compute/help/Get-AzDisk.md
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDisk.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzDisk.md
 ---
 
 # Get-AzDisk
@@ -25,9 +25,11 @@ The **Get-AzDisk** cmdlet gets the properties of a Managed disk.
 ## EXAMPLES
 
 ### Example 1
+```powershell
+Get-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01'
 ```
-PS C:\> Get-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01'
 
+```output
 ResourceGroupName  : ResourceGroup01
 ManagedBy          :
 Sku                : Microsoft.Azure.Management.Compute.Models.DiskSku
@@ -51,9 +53,11 @@ Tags               : {}
 This command gets the properties of the disk named 'Disk01' in the resource group 'ResourceGroup01'.
 
 ### Example 2
+```powershell
+Get-AzDisk -ResourceGroupName 'ResourceGroup01'
 ```
-PS C:\> Get-AzDisk -ResourceGroupName 'ResourceGroup01'
 
+```output
 ResourceGroupName  : ResourceGroup01
 ManagedBy          :
 Sku                : Microsoft.Azure.Management.Compute.Models.DiskSku
@@ -96,9 +100,11 @@ Tags               : {}
 This command gets the properties of all disks in the resource group 'ResourceGroup01'.
 
 ### Example 3
+```powershell
+Get-AzDisk
 ```
-PS C:\> Get-AzDisk
 
+```output
 ResourceGroupName  : ResourceGroup01
 ManagedBy          :
 Sku                : Microsoft.Azure.Management.Compute.Models.DiskSku
@@ -141,9 +147,11 @@ Tags               : {}
 This command gets the properties of all disks under the subscription.
 
 ### Example 4
+```powershell
+Get-AzDisk -Name win_OsDisk*
 ```
-PS C:\> Get-AzDisk -Name win_OsDisk*
 
+```output
 ResourceGroupName  : ResourceGroup01
 ManagedBy          :
 Sku                : Microsoft.Azure.Management.Compute.Models.DiskSku
