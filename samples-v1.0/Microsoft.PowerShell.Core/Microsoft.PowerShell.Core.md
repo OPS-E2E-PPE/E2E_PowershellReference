@@ -6,6 +6,8 @@ Module Guid: 00000000-0000-0000-0000-000000000000
 Module Name: Microsoft.PowerShell.Core
 ms.date: 09/02/2024
 schema: 2.0.0
+author: xyz987
+ms.author: xyz987
 title: Microsoft.PowerShell.Core
 ---
 # Microsoft.PowerShell.Core Module
