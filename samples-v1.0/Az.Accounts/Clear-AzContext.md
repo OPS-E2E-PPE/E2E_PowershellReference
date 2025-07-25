@@ -4,7 +4,6 @@ Module Name: Az.Accounts
 online version: https://learn.microsoft.com/powershell/module/az.accounts/clear-azcontext
 schema: 2.0.0
 cmdletStatus: deprecated
-cmdletStatusMessage: text description of reasonable length.
 ---
 
 # Clear-AzContext
